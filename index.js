@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/images', express.static('backend/public/images'));
+app.use(express.static('public'));
 
 
 // Connect to MongoDB Atlas
